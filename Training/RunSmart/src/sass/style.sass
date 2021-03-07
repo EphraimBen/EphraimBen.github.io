@@ -8,9 +8,42 @@
 	max-width: 950px
 	margin: 0 auto
 
+// Disable spin arrow for input[number]
+
+// For Chrome
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button 
+	-webkit-appearance: none
+	margin: 0
+
+// For Firefox:
+
+input[type="number"] 
+	-moz-appearance: textfield
+
+input[type="number"]:hover,
+input[type="number"]:focus 
+	-moz-appearance: number-input
+
+// For others
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+	-webkit-appearance: none
+	margin: 0
+
 @import "blocks/logo"
-@import "blocks/buttons"
+@import "blocks/button"
+@import "blocks/title"
+@import "blocks/form"
 
 @import "sections/promo"
-@import "general"
+@import "sections/advantages"
+@import "sections/consultation"
+@import "sections/carousel"
+@import "sections/catalog"
+@import "sections/client"
+@import "sections/footer"
+
 @import "media"

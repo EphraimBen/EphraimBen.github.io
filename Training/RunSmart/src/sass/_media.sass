@@ -2,8 +2,284 @@
 
 // @media (max-width: 1199px)
 
-// @media (max-width: 991px)
+@media (max-width: 991px)
 
-// @media (max-width: 767px)
+    .carousel
+        &__inner
+            width: 500px
+        img
+            width: 500px
 
-// @media (max-width: 575px)
+    .catalog
+        &__content
+            justify-content: center
+
+    .footer
+        &__info
+            width: 400px
+            height: 220px
+            &-address
+                margin-top: 40px
+            &-tel
+                margin-top: 35px
+            &-social
+                margin-top: 35px
+    
+@media (max-width: 767px)
+
+    .logo
+        width: 180px
+    .button
+        &__header
+            width: 125px
+            height: 25px
+            font-size: 11px
+        &__main
+            width: 260px
+    .title
+        font-size: 25px
+        &__consultation
+            text-align: center
+    .form
+        margin: 36px auto 0 auto
+
+    .promo
+        &__header
+            &-official
+                font-size: 11px
+                span
+                    font-size: 17px
+            &-tel
+                font-size: 15px
+        &__content
+            &-title
+                font-size: 35px
+                line-height: 25px
+            &-subtitle
+                font-size: 20px
+                line-height: 15px
+                margin-top: 19px
+        &__item
+            font-size: 12px
+            &:nth-child(1)
+                width: 90px
+            &:nth-child(2)
+                width: 66px
+            &:nth-child(3)
+                width: 87px
+    
+    .advantages
+        padding: 50px 0 60px 0
+        &__items
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-top: 50px
+        &__item
+            margin-top: 40px
+            &:nth-child(1)
+                margin-top: 0
+            &-title
+                margin-top: 25px
+
+    .consultation__descr
+        text-align: center
+        margin: 30px auto 0 auto
+
+    .carousel
+        padding-bottom: 55px
+        &__inner
+            width: 400px
+        img
+            width: 400px
+        .slick-prev, .slick-next
+            img
+                display: none
+        .slick-dots
+            display: flex
+            justify-content: center
+            list-style-type: none
+            padding-left: 0
+            margin: 20px auto 0 auto
+            button
+                font-size: 0
+                width: 15px
+                height: 15px
+                background-color: #fff
+                border: 2px solid $main-color
+                border-radius: 100%
+                margin: 0 5px
+            .slick-active
+                button
+                    background-color: $main-color
+
+    .catalog
+        &__tabs
+            margin-top: 50px
+        &__tab
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 160px
+            height: 45px
+            font-size: 16px
+
+    .client
+        &__item
+            flex-direction: column
+            margin-top: 60px
+        &__img
+            margin-right: 0
+        &__descr
+            text-align: center
+            margin-top: 30px
+        &__story
+            width: 500px
+    .footer
+        &__info
+            width: 330px
+            height: 190px
+            &-address
+                font-size: 16px
+                line-height: 14px
+                margin-top: 28px
+            &-tel
+                font-size: 16px
+                line-height: 14px
+                margin-top: 28px
+            &-social
+                width: 210px
+                height: 50px
+                margin-top: 28px
+
+@media (max-width: 575px)
+
+    .logo
+        width: 150px
+    .title
+        font-size: 18px
+        &__consultation
+            display: none
+            &--hidden
+                display: block
+                color: #ffffff
+                font-size: 20px
+                line-height: 33px
+    .button
+        &__header
+            width: 110px
+            height: 22px
+            font-size: 10px
+        &__main
+            margin-top: 60px
+        &__consultation
+            width: 260px
+    .form
+        width: 260px
+        &__consultation
+            margin-top: 20px
+
+
+    .promo
+        min-height: 641px
+        padding-bottom: 35px
+        background: url(../img/bg/promo_mobile_bg.jpg) center (center/cover) no-repeat
+        &__header
+            &-official
+                display: none
+            &-tel
+                font-size: 13px
+                line-height: 20px
+        &__content
+            align-items: center
+            &-header
+                text-align: center
+            &-title
+                font-size: 35px
+                line-height: 45px
+                margin-top: 80px
+            &-subtitle
+                font-size: 18px
+                line-height: 25px
+                margin-top: 12px
+        &__items
+            margin-top: 60px
+        &__item
+            font-size: 10px
+            margin-right: 46px
+            &:nth-child(1)
+                width: 75px
+            &:nth-child(2)
+                width: 55px
+            &:nth-child(3)
+                width: 73px
+            &-descr
+                line-height: 14px
+    
+    .advantages
+        padding: 40px 0 50px 0
+        &__items
+            margin-top: 40px
+        &__item
+            &-title
+                font-size: 15px
+            &-descr
+                font-size: 12px
+                margin-top: 15px
+
+    .consultation
+        min-height: 500px
+        background: url(../img/bg/consultation_mobile_bg.jpg) center (center/cover) no-repeat
+        padding: 50px 0
+        &__descr
+            width: 266px
+            font-size: 15px
+            margin-top: 10px
+    
+    .carousel
+        &__inner
+            width: 300px
+        img
+            width: 300px
+
+    .catalog
+        padding-bottom: 50px
+        &__tabs
+            margin-top: 30px
+        &__tab
+            width: 75px
+            height: 20px
+            font-size: 7px
+        &__item
+            margin-right: 0
+                
+    .client
+        padding-bottom: 50px
+        &__story
+            width: 280px
+
+    .footer
+        height: 500px
+        &__map
+            height: 500px
+        &__info
+            width: 210px
+            height: 130px
+            &-address
+                font-size: 11px
+                line-height: 10px
+                margin-top: 20px
+            &-tel
+                font-size: 11px
+                line-height: 10px
+                margin-top: 20px
+            &-social
+                width: 116px
+                height: 32px
+                margin-top: 20px
+            &-item
+                width: 32px
+                height: 32px
+                border: 2px solid #fff
+                span
+                    font-size: 18px

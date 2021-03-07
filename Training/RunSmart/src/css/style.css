@@ -1,0 +1,12 @@
+.some {
+    color: blue;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    .some__t {
+        color: white;
+        width: 20px;
+        height: 20px;
+        background-color: green;
+    }
+}
