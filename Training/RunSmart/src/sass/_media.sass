@@ -2,12 +2,15 @@
 
 // @media (max-width: 1199px)
 
+// @media (min-width: 992px)
+
 @media (max-width: 991px)
 
+    .container
+        max-width: 670px
+
     .carousel
-        &__inner
-            width: 500px
-        img
+        &-inner
             width: 500px
 
     .catalog
@@ -87,31 +90,13 @@
         margin: 30px auto 0 auto
 
     .carousel
-        padding-bottom: 55px
-        &__inner
+        padding: 40px 0
+        &-inner
             width: 400px
-        img
-            width: 400px
-        .slick-prev, .slick-next
-            img
-                display: none
-        .slick-dots
+        &-control-prev, &-control-next
+            display: none
+        &-indicators
             display: flex
-            justify-content: center
-            list-style-type: none
-            padding-left: 0
-            margin: 20px auto 0 auto
-            button
-                font-size: 0
-                width: 15px
-                height: 15px
-                background-color: #fff
-                border: 2px solid $main-color
-                border-radius: 100%
-                margin: 0 5px
-            .slick-active
-                button
-                    background-color: $main-color
 
     .catalog
         &__tabs
@@ -237,10 +222,8 @@
             margin-top: 10px
     
     .carousel
-        &__inner
-            width: 300px
-        img
-            width: 300px
+        &-inner
+            width: 280px
 
     .catalog
         padding-bottom: 50px
