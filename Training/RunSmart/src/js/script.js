@@ -14,7 +14,22 @@ $(document).ready(function(){
             });
         });
     };
-
     toggleSlide('.catalog__item-content');
-    toggleSlide('.catalog__item-info')
+    toggleSlide('.catalog__item-info');
+
+    // Modal
+
+    $('[data-modal=consultation]').on('click', function() {
+        $('.overlay , #consultation').fadeIn();
+    });
+
+    $('.button__catalog').on('click', function() {
+        $('.overlay , #order').fadeIn();
+    });
+
+    $('.modal__close').on('click', function() {
+        $('.overlay, #consultation, #order, #thanks').fadeOut();
+    });
+
+
 });
