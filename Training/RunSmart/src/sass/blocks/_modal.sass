@@ -12,7 +12,8 @@
     left: 50%
     transform: translate(-50% , -50%)
     width: 380px
-    height: 390px
+    height: auto
+    min-height: 390px
     background-color: #f2f2f2
     padding: 40px
     overflow: visible
@@ -44,3 +45,15 @@
 
 #consultation, #order, #thanks
     display: none
+
+#thanks
+    min-height: 140px
+
+.error
+    font-size: 14px
+    line-height: 11px
+    text-align: center
+
+.form__consultation
+    .error
+        color: #fff
