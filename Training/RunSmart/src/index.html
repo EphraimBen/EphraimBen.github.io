@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-	<section class="promo">
+	<section class="promo" id="up">
 		<div class="container">
 			<header class="promo__header">
 						<div class="logo">
@@ -108,7 +108,7 @@
 		</div>
 	</section>
 
-	<section id="carouselExampleIndicators" data-interval="false" class="carousel slide" data-ride="carousel">
+	<section id="carousel" data-interval="false" class="carousel slide" data-ride="carousel">
 		<div class="container">
 			<div class="carousel-inner">
 				<div class="carousel-item active">
@@ -123,15 +123,15 @@
 			</div>
 
 			<ol class="carousel-indicators">
-				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				<li data-target="#carousel" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel" data-slide-to="1"></li>
+				<li data-target="#carousel" data-slide-to="2"></li>
 			</ol>
 
-			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+			<a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
 				<img class="carousel__arrow carousel__arrow-left" src="icons/arrow-left.png" alt="left">
 			</a>
-			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+			<a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
 				<img class="carousel__arrow carousel__arrow-right" src="icons/arrow-right.png" alt="right">
 			</a>
 		</div>
@@ -481,10 +481,25 @@
 		</div>
 	</div>
 
+	<a href="#up" class="pageup">
+		<img src="icons/chevron-circle-up-solid.svg" alt="up">
+	</a>
+
+
+	<!-- JQuery for Bootstrap Carousel and Modal Forms -->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+	<!-- Modal Forms -->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+	<!-- Validation Plugin (Forms)-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+
+	<!-- Bootstrap v4.3.1 (Carousel)-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<!-- Local js file -->
 	<script src="js/script.js"></script>
 </body>
 </html>
