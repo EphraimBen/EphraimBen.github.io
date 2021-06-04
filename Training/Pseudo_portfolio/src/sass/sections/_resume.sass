@@ -1,0 +1,55 @@
+.resume
+    padding: 20px 0px 100px
+    &__wrapper
+        width: 970px
+        display: flex
+        justify-content: space-between
+        margin: 70px auto 0 auto
+    &__education
+        position: relative
+        width: 410px
+    &__experience
+        position: relative
+        width: 410px
+    &__title
+        padding-left: 50px
+        margin-top: 0
+        @include before_circle
+        &:before
+            top: 0
+            left: 0
+            width: 15px
+            height: 15px
+    &__item
+        position: relative
+        width: 410px
+        min-height: 110px
+        padding-left: 50px
+        margin-top: 60px
+        &-head
+            position: relative
+            display: flex
+            align-items: center
+        &-name
+            margin-left: 20px
+        &-img
+            position: relative
+            z-index: 2
+            margin: 15px 0 0 15px
+            @include before_circle
+            &:before
+                top: -15px
+                left: -15px
+        &-title
+            margin-top: 0
+        &-subtitle
+            color: #000000
+            font-size: 12px
+            font-weight: 500
+            text-align: left
+        &-descr
+            color: #000000
+            font-size: 12px
+            font-weight: 500
+            text-align: left
+            margin-top: 15px

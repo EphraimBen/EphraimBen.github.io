@@ -1,0 +1,23 @@
+.subtitle
+    position: relative
+    z-index: 2
+    color: #000000
+    font-weight: 700
+    &--fz16
+        font-size: 16px
+        line-height: 24px
+    &--fz14
+        font-size: 14px
+        line-height: 24px
+    &__circle--left
+        padding-left: 10px
+        padding-top: 6px
+        padding-bottom: 6px
+        @include before_circle
+    &__circle--center
+        padding-top: 6px
+        padding-bottom: 6px
+        text-align: center
+        @include before_circle
+        &:before
+            left: calc(100%/2 - 18px)

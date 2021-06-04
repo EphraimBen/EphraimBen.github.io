@@ -1,0 +1,30 @@
+.sidepanel
+    position: fixed
+    z-index: 5
+    display: flex
+    justify-content: space-between
+    align-items: center
+    top: calc((100% - 20px)/2)
+    left: -110px
+    width: 340px
+    height: 20px
+    transform: rotate(-90deg)
+    &__divider
+        width: 70px
+        background-color: #000
+        border: none
+        opacity: 1
+    hr
+        height: 2px
+    &__text
+        color: #000000
+        font-weight: 700
+        text-align: left
+    &__link
+        width: 20px
+        height: 20px
+        transform: rotate(90deg)
+        text-decoration: none
+        span
+            font-size: 20px
+            color: #000

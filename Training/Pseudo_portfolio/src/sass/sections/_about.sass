@@ -1,0 +1,41 @@
+.about
+    padding: 20px 0px 100px
+    &__wrapper
+        display: flex
+        justify-content: space-around
+    &__descr
+        width: 565px
+        color: #000000
+        font-size: 14px
+        font-weight: 500
+        text-align: left
+        margin-top: 20px
+    &__container
+        width: 570px
+        display: grid
+        grid-template: repeat(2 , minmax(90px , auto)) / repeat(2 , 260px)
+        grid-auto-rows: 90px
+        gap: 50px
+        margin-top: 60px
+    &__item
+        width: 260px
+        display: flex
+        justify-content: space-between
+        &-img
+            position: relative
+            z-index: 2
+            margin: 15px 0 0 15px
+            @include before_circle
+            &:before
+                top: -15px
+                left: -15px
+        &-info
+            width: 200px
+        &-title
+            margin-top: 0
+        &-descr
+            color: #000000
+            font-size: 12px
+            font-weight: 500
+            text-align: left
+            margin-top: 5px

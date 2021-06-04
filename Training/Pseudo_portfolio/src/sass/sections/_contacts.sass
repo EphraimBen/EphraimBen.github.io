@@ -1,0 +1,52 @@
+.contacts
+    padding: 20px 0px 100px
+    &__wrapper
+        display: flex
+        justify-content: space-around
+    &__info
+        width: 585px
+    &__choice
+        line-height: 15px
+        margin-top: 20px
+    &__social
+        margin-top: 20px
+        &-item
+            height: 30px
+            text-decoration: none
+            margin-right: 25px
+            span
+                font-size: 30px
+                color: #000
+    &__form
+        width: 100%
+        display: grid
+        grid-template: 45px 190px  45px/ repeat(2 , 280px)
+        grid-auto-columns: auto
+        gap: 30px 25px
+        margin-top: 30px
+        label
+            position: absolute
+            top: -8px
+            left: 12px
+            font-size: 12px
+            padding: 0 8px
+            background-color: #fff
+    &__input
+        position: relative
+        input
+            width: 100%
+            height: 100%
+            padding-left: 20px
+            font-size: 12px
+            border-color: #000
+            outline: none
+    &__textarea
+        position: relative
+        grid-column: 1 / 3
+        grid-row: 2 / 3
+        textarea
+            width: 100%
+            height: 100%
+            padding: 15px 0 0 20px
+            border-color: #000
+            outline: none

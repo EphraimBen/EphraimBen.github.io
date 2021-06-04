@@ -1,0 +1,54 @@
+.skills
+    padding: 20px 0px 100px
+    &__container
+        width: 1120px
+        display: grid
+        grid-template: repeat(2 , 270px) / repeat(4 , 270px)
+        grid-auto-rows: 270px
+        gap: 13px
+        margin: 60px auto 0 auto
+    &__box
+        width: 270px
+        padding: 30px
+        border: 1px solid #000
+        &-img
+            width: 210px
+            height: 65px
+        &-title
+            margin-top: 20px
+        &-descr
+            width: 210px
+            color: #000000
+            font-size: 12px
+            line-height: 18px
+            font-weight: 500
+            margin-top: 20px
+
+    &__progress
+        &-container
+            display: grid
+            width: 1140px
+            grid-template: repeat(2 , 70px) / repeat(3 , 350px)
+            grid-auto-rows: 70px
+            gap: 30px 45px
+            margin-top: 120px
+        &-item
+            width: 350px
+            height: 70px
+            display: grid
+            grid-template-columns: repeat(2 , 50%)
+            gap: 20px 0
+            align-items: center
+            &-percent
+                font-weight: 500
+                font-size: 14px
+                line-height: 21px
+                text-align: right
+            &-bar
+                width: 350px
+                height: 14px
+                background: #e8e4de
+                &--colored
+                    height: 100%
+                    background: $main-color
+                    border-radius: 4px
