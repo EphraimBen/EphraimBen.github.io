@@ -1,24 +1,31 @@
 .about
     padding: 20px 0px 100px
     &__wrapper
+        width: 1040px
         display: flex
-        justify-content: space-around
+        justify-content: space-between
+        align-items: center
+        margin: 0 auto
+    &__img
+        height: 600px
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
     &__descr
-        width: 565px
+        width: 570px
         color: #000000
         font-size: 14px
         font-weight: 500
         text-align: left
         margin-top: 20px
     &__container
-        width: 570px
         display: grid
-        grid-template: repeat(2 , minmax(90px , auto)) / repeat(2 , 260px)
+        grid-template: repeat(2 ,90px) / repeat(2 , 260px)
         grid-auto-rows: 90px
         gap: 50px
-        margin-top: 60px
+        margin-top: 40px
     &__item
-        width: 260px
         display: flex
         justify-content: space-between
         &-img
