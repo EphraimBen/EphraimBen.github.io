@@ -48,13 +48,13 @@
     <aside class="sidepanel">
         <div class="sidepanel__text">Социальные сети</div>
         <hr class="sidepanel__divider">
-        <a href="#" class="sidepanel__link">
+        <a href="#" class="sidepanel__link" aria-label="Github">
             <span class="icon-github"></span>
         </a>
-        <a href="#" class="sidepanel__link">
+        <a href="#" class="sidepanel__link" aria-label="Instgram">
             <span class="icon-instagram"></span>
         </a>
-        <a href="#" class="sidepanel__link">
+        <a href="#" class="sidepanel__link" aria-label="Facebook">
             <span class="icon-facebook_square"></span>
         </a>
     </aside>
@@ -409,9 +409,12 @@
                     <div class="divider divider--left"></div>
                     <div class="title title--fz14 contacts__choice">Любым удобным для вас способом:</div>
                     <div class="contacts__social">
-                        <a href="#" class="contacts__social-item"><span class="icon-facebook_square"></span></a>
-                        <a href="#" class="contacts__social-item"><span class="icon-telegram"></span></a>
-                        <a href="#" class="contacts__social-item"><span class="icon-instagram"></span></a>
+                        <a href="#" class="contacts__social-item" aria-label="Facebook">
+                            <span class="icon-facebook_square"></span></a>
+                        <a href="#" class="contacts__social-item" aria-label="Telegram">
+                            <span class="icon-telegram"></span></a>
+                        <a href="#" class="contacts__social-item" aria-label="Instagram">
+                            <span class="icon-instagram"></span></a>
                     </div>
                     <div class="title title--fz14 contacts__choice">Или оставьте ваши данные и я сама вам напишу:</div>
 
@@ -432,7 +435,8 @@
                         <div class="contacts__btns">
                             <button class="btn">Отправить сообщение</button>
                             <div class="contacts__policy">
-                                <input required type="checkbox">
+                                <input required  id="policy" type="checkbox">
+                                <label for="policy"></label>
                                 <span>Я согласен(а) с <a href="/policy.html">политикой конфиденциальности</a></span>
                             </div>
                         </div>
@@ -441,6 +445,7 @@
             </div>
         </div>
     </section>
+
 
     <script src="js/script.js"></script>
 </body>
