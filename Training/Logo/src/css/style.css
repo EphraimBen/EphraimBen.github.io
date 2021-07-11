@@ -22,12 +22,9 @@
 .logo__white {
     background-color: #fff;
 }
-.logo__white path {
-    fill: #000;
-}
 .logo__black {
     background-color: #000;
 }
 .logo__black path {
-    fill: #fff;
+    stroke: #fff;
 }
